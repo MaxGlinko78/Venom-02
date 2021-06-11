@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -29,6 +29,15 @@
             </a>
 
             <nav class="header-menu">
+
+                <button class="menu-batton">
+                    <span class="button-text">меню</span>
+                    <img src="img/menu-icon.svg" alt="icon: Burger Menu" class="menu-btn__icon">
+                </button>
+                <button class="menu-close">
+                    <span class="button-text">закрыть</span>
+                    <img src="img/arrow-right.svg" alt="icon: Burger Menu Close" class="menu-btn__icon">
+                </button>
                 <ul class="header-menu__items">
                     <li class="header-menu__item"><a href="about.html" class="header-menu__link">о фильме</a></li>
                     <li class="header-menu__item"><a href="trailer.html" class="header-menu__link">трейлер </a></li>
@@ -50,10 +59,10 @@
             </div>
             <!-- /.film-text -->
             <div class="button-group">
-                <button class="button button-primary">
+                <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
                     <img width="15" src="img/play-icon.svg" alt="icon: Play" class="play-icon">
                     <span class="btn-text">смотреть трейлер</span>
-                </button>
+                </a>
                 <a href="trailer.html" class="button button-link">
                     <img width="15" src="img/ticket-icon.svg" alt="icon: Ticket" class="ticket-icon">
                     <span class="btn-text">билеты на премьеру</span>
@@ -72,6 +81,9 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 
